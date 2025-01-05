@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en"   >
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1.0, user-scalable=0,viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta http-equiv="cleartype" content="on">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="google" content="notranslate">
+  <title>qrcodeimplementation</title>
+  <meta name="description" content="" />
+  <meta name="Author" content="AR Systems" />
+  <meta name="Copyright" content="The Unlicense" />
+  <meta name="Keywords" content="QR, QR Code, Generator" />
+  <meta name="Subject" content="" />
+  <meta property="og:url"  content="https://sarthihan.github.io/QR" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="" />
+  <meta name="theme-color" content="rgb(0,0,0)">
+  <meta name="apple-mobile-web-app-title" content="AR.QR">
+
+  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./icons/apple-touch-icon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./icons/apple-touch-icon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./icons/apple-touch-icon-96x96.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="./icons/apple-touch-icon-192x192.png">
+
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="msapplication-TileColor" content="rgb(0,0,0)">
+  <meta name="msapplication-TileImage" content="./icons/apple-touch-icon-144x144.png">
+  <meta name="msapplication-square70x70logo" content="./icons/apple-touch-icon-70x70.png">
+  <meta name="msapplication-square150x150logo" content="./icons/apple-touch-icon-150x150.png">
+  <meta name="msapplication-wide310x150logo" content="./icons/apple-touch-icon-150x150.png">
+  <link rel="apple-touch-icon"  href="./icons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="16x16" href="./icons/apple-touch-icon-16x16.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="./icons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./icons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./icons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./icons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./icons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./icons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./icons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./icons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+
+  <link href="splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/framework7-bundle.min.css">
+  <link rel="stylesheet" href="css/framework7-keypad.min.css">
+  <link rel="stylesheet" href="css/thorium.min.css">
+  <link rel="stylesheet" href="css/pages/index.css?r=91464">
+  <link rel="stylesheet" href="js/plugins/com.thorium.qrcode-reader/qrcode-reader.css"></link>
+
+  <link rel="stylesheet" href="css/classes.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body class="" >
+  <div class="apploader"></div>
+  <div id="app" class="framework7-root">
+	<div class="panel-backdrop"></div>
+	<div id="panel-left" class="panel panel-left panel-init panel-cover" data-swipe="true">
+    		<div id="left-panel-page-o-wgifyv048" class="page">
+        			<div id="left-panel-page-content" class="page-content"></div>
+    		</div>
+	</div>
+
+	<div id="panel-right" class="panel panel-right panel-init panel-cover" data-swipe="true">
+    		<div id="right-panel-page-o-smqpfn592" class="page">
+        			<div id="right-panel-page-content" class="page-content"></div>
+    		</div>
+	</div>
+
+	<div id="view-main" class="view view-main view-init safe-areas" data-url="/">
+		<div id="page" class="page page-with-navbar-large" data-name="index">
+		
+	<div id="navbar-o-jtterb090" class="navbar navbar-large navbar-transparent" data-effect-blur="" data-effect-brightness="" data-effect-contrast="" data-effect-grayscale="" data-effect-invert="" data-effect-saturate="" data-effect-sepia="" data-effect-hue-rotate=""><div id="navbg-navbar-o-jtterb090" class="navbar-bg"></div><div id="navbar-inner-o-decusw377" class="navbar-inner navbar-inner-large">
+<div id="left-o-binzss957" class="left">
+</div>
+<div id="title-o-elczns575" class="title ">AR.QR<span id="obj-lmfbmo508" class="subtitle">Generate QR Codes easily</span>
+</div>
+<div id="right-o-iobxok941" class="right">
+</div>
+<div id="obj-1054" class="title-large">
+<div id="obj-1055" class="title-large-text">AR.QR</div>
+</div>
+</div>
+
+</div>
+
+			<div id="page-contents-o-qoooqz993" class="page-content" data-effect-blur="" data-effect-brightness="" data-effect-contrast="" data-effect-grayscale="" data-effect-invert="" data-effect-saturate="" data-effect-sepia="" data-effect-hue-rotate="">
+
+			<div id="obj-czbxkn828" class="block custom-block text-center mb-0 pt-4 pb-4"><canvas id="obj-tmfbff782" data-plugin-identifier="com.thorium.qrcode.generator" class="plugin qrcode qrcode-image" data-plugin-error-correction-level="High" data-plugin-margin="" data-plugin-mode="Auto" data-plugin-text="https://sarthihan.github.io" data-plugin-color-light="#FFFFFF" data-plugin-color-dark="#0D2E12" data-effect-blur="" data-effect-brightness="" data-effect-contrast="" data-effect-grayscale="" data-effect-invert="" data-effect-saturate="" data-effect-sepia="" data-effect-hue-rotate="">
+</canvas></div><form id="obj-hsvruz466" name="obj-hsvruz466" class="list form ajax-submit form-ajax-submit mt-0 mb-0 pb-2 form-transluscent-input" data-form-message="" data-form-error-message="" data-api-url="" data-api-method="GET" data-api-root="" data-api-data-mode="0" data-form-postprocess="-1" data-api-header="" data-init-mode="0" data-reset-form="false" data-effect-blur="" data-effect-brightness="" data-effect-contrast="" data-effect-grayscale="" data-effect-invert="" data-effect-saturate="" data-effect-sepia="" data-effect-hue-rotate="" data-mode="2" data-form-function="updateQRCode"><ul id="obj-1060">
+<li class="item-content item-input" id="obj-hsvruz466-li-1" data-state="" data-errormessage="" data-pattern="" data-autofill="false" data-stored-standardfileinput="false" data-stored-autocomplete="" data-function="" data-stored-number-input-type="0">
+<div id="obj-hsvruz466-li-1-item-inner" class="item-inner">
+<div id="obj-hsvruz466-li-1-item-title" class="item-title item-label   ">URL to Calculate</div>
+<div id="obj-hsvruz466-li-1-item-input" class="item-input-wrap">
+<input id="input-obj-hsvruz466-url" class="no-store-data" name="url" value="" type="text" placeholder="eg. Web Site URL" spellcheck="false"> </div>
+ </div>
+ </li>
+
+
+</ul>
+</form><div id="obj-mqkesb689" class="block custom-block mt-0"><a id="obj-eixcuj711" class="form-submit-button button-raised button-round button-fill button-large color-blue text-white button" data-form="obj-hsvruz466">Create QR</a></div>   <div id="obj-mtziei009" class="block custom-block block-text mb-2 text-center inset"><p id="obj-1058">AR Systems. Making things since 2018</p></div><div id="obj-ejcsnu210" class="block custom-block text-center mt-0"><a id="obj-bmdvzg124" class="link external" href="https://sarthihan.github.io" data-rel="external" target="_blank" rel="noopener">AR SYSTEMS</a></div></div>
+		</div>           	
+         </div>
+</div>
+
+  
+<!-- 2 FACTORS SCREEN -->
+<div class="popup popup-tablet-fullscreen dbexpress-twofactors">
+    <div class="view">
+        <div class="page">
+            <div class="navbar">
+                <div class="navbar-bg"></div>
+                <div class="navbar-inner">
+                    <div class="left"></div>
+                    <div class="title">PIN</div>
+                    <div class="right"></div>
+                </div>
+            </div>
+            <div class="page-content">
+                <div class="block passcode-input">
+                    <h2 class="text-center">PIN CODE</h2>
+                    <input class="dbexpress-twofactors-pin" readonly value="____" id="dbexpress-twofactors-pin"
+                        type="text">
+                </div>
+                <div class="numpad-inline-container ripple">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+  <!-- TEXT VIEWER -->
+<div class="sheet-modal text-viewer-popup">
+    <div class="toolbar">
+        <div class="toolbar-inner">
+            <div class="left">
+                <a class="link" href="#"><i class="link fa f7-icons text-viewer-smaller">textformat_alt</i></a>
+                <a class="link" href="#"><i class=" linkfa f7-icons text-viewer-bigger">textformat_alt</i></a>
+            </div>
+            <div class="right">
+                <a class="link sheet-close"><i class="fa f7-icons">xmark_circle_fill</i></a>
+            </div>
+        </div>
+    </div>
+    <div class="sheet-modal-inner">
+        <div class="block block-text"></div>
+    </div>
+</div>
+
+  <script type="text/javascript" src="js/service-worker-register.js"></script>
+  <script type="text/javascript" src="js/framework/framework7-bundle.min.js"></script>
+  <script type="text/javascript" src="js/framework/framework7-keypad.min.js"></script>
+  <script type="text/javascript" src="js/thorium.config.js"></script>
+  <script type="text/javascript" src="js/plugins/thorium.api.min.js"></script>
+  <script type="text/javascript" src="js/plugins/thorium.core.min.js"></script>
+  <script type="text/javascript" src="js/plugins/thorium.jsonapi.min.js"></script>
+  <script type="text/javascript" src="js/plugins/com.thorium.qrcode.generator/qrcode.min.js"></script>
+  <script type="text/javascript" src="js/plugins/com.thorium.qrcode.generator/com.thorium.qrcode.generator.js"></script>
+<script type="text/javascript" src="js/plugins/com.thorium.qrcode-reader/grid.js"></script>
+        <script type="text/javascript" src="js/plugins/com.thorium.qrcode-reader/version.js"></script>
+        <script type="text/javascript" src="js/plugins/com.thorium.qrcode-reader/detector.js"></script>
+        <script type="text/javascript" src="js/plugins/com.thorium.qrcode-reader/formatinf.js"></script>
+        <script type="text/javascript" src="js/plugins/com.thorium.qrcode-reader/errorlevel.js"></script>
+        <script type="text/javascript" src="js/plugins/com.thorium.qrcode-reader/bitmat.js"></script>
+        <script type="text/javascript" src="js/plugins/com.thorium.qrcode-reader/datablock.js"></script>
+        <script type="text/javascript" src="js/plugins/com.thorium.qrcode-reader/bmparser.js"></script>
+        <script type="text/javascript" src="js/plugins/com.thorium.qrcode-reader/datamask.js"></script>
+        <script type="text/javascript" src="js/plugins/com.thorium.qrcode-reader/rsdecoder.js"></script>
+        <script type="text/javascript" src="js/plugins/com.thorium.qrcode-reader/gf256poly.js"></script>
+        <script type="text/javascript" src="js/plugins/com.thorium.qrcode-reader/gf256.js"></script>
+        <script type="text/javascript" src="js/plugins/com.thorium.qrcode-reader/decoder.js"></script>
+        <script type="text/javascript" src="js/plugins/com.thorium.qrcode-reader/qrcode.js"></script>
+        <script type="text/javascript" src="js/plugins/com.thorium.qrcode-reader/findpat.js"></script>
+        <script type="text/javascript" src="js/plugins/com.thorium.qrcode-reader/alignpat.js"></script>
+        <script type="text/javascript" src="js/plugins/com.thorium.qrcode-reader/databr.js"></script>
+  <script type="text/javascript" src="js/plugins/com.thorium.qrcode-reader/com.thorium.qrcode-reader.js"></script>
+
+  <script type="text/javascript" src="js/custom.js" ></script>
+  <script>thoriumCorePlugin.appLoaded();</script>
+
+</body>
+</html>
