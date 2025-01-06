@@ -4,7 +4,7 @@
  * framework7 v6.x (https://framework7.io) MIT Licensed
  * Copyright 2018-2021 Thorium builder, All Rights Reserved.
 */
-const kAppBuild= "Build #9";
+const kAppBuild= "Build #11";
 const kDebugMessagesLevel= 0;
 const kHybridAppsLog = true;
 const kAutoUpdate=false;

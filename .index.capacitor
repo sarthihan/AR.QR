@@ -2,7 +2,7 @@
 <html lang="en"   >
 <head>
   <meta charset="UTF-8">
-  <title>qrcodeimplementation</title>
+  <title>AR.QR</title>
   <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="Format-detection" content="telephone=no">
   <meta name="msapplication-tap-highlight" content="no">
@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="css/framework7-bundle.min.css">
   <link rel="stylesheet" href="css/framework7-keypad.min.css">
   <link rel="stylesheet" href="css/thorium.min.css">
-  <link rel="stylesheet" href="css/pages/index.css?r=34889">
+  <link rel="stylesheet" href="css/pages/index.css?r=36134">
   <link rel="stylesheet" href="js/plugins/com.thorium.qrcode-reader/qrcode-reader.css"></link>
 
   <link rel="stylesheet" href="css/classes.css">
